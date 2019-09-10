@@ -228,11 +228,25 @@ template: contentleft
 
 # Utiliser Miniconda (dans les salles infos)
 
-Miniconda est déjà installé. **Ne l'installer pas dans vos sessions utilisateurs !**
+Miniconda est déjà installé. 
 
 --
 
-Pour utiliser les environnements des profs :
+<br />
+
+**Ne l'installer pas dans vos sessions utilisateurs !**
+
+.center[
+	<img src="img/i_see_you.gif" height="300px" />
+]
+
+
+---
+template: contentleft
+
+# Utiliser Miniconda (dans les salles infos) (2)
+
+### Utiliser les environnements des profs
 ```
 $ conda env list
 $ conda activate ENVNAME
@@ -244,7 +258,7 @@ $ conda deactivate
 ---
 template: contentleft
 
-# Utiliser Miniconda (dans les salles infos) (2)
+# Utiliser Miniconda (dans les salles infos) (3)
 
 ### Installer VOTRE environnement 
 ```
@@ -267,10 +281,11 @@ Exemple :
 $ conda activate ~/scratch/rnaseq-env/
 ```
 
+
 ---
 template: contentleft
 
-# Utiliser Miniconda (dans les salles infos) (3)
+# Utiliser Miniconda (dans les salles infos) (4)
 
 ### Quitter VOTRE environnement
 ```
@@ -284,8 +299,27 @@ $ conda env remove -p /path/to/env/
 ```
 Exemple :
 ```
-$ conda env create -f rnaseq.yml -p ~/scratch/rnaseq-env/
+$ conda env remove -p ~/scratch/rnaseq-env/
 ```
+
+---
+template: contentleft
+
+# Conseils 
+
+- Utilisez des environnements conda.
+
+--
+
+- Décrivez vos environnements dans des fichiers yaml.
+
+--
+
+- Versionnez les fichiers yaml.
+
+--
+
+- Expérimentez / testez !
 
 
 ---
