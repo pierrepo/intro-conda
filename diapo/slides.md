@@ -148,6 +148,7 @@ $ conda deactivate
 ### Chercher un logiciel
 ```
 $ conda search jupyterlab
+$ conda search -c bioconda fastqc
 ```
 
 ### Installer un logiciel
@@ -155,7 +156,7 @@ $ conda search jupyterlab
 $ conda install jupyterlab
 $ conda install -c bioconda samtools
 ```
-⚠ Pas besoin d'être administrateur 
+⚠ Pas besoin d'être administrateur !
 
 ou encore `$ pip install numpy`
 
