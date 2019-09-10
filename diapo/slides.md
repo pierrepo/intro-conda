@@ -74,7 +74,7 @@ template: contentleft
 - Distribution open source.
 - Disponible pour Windows, Mac et Linux.
 - Installable sans être **administrateur**.
-- Nombreux outils pour l'analyse de données (en Python).
+- Nombreux outils pour l'analyse de données.
 
 --
 
@@ -84,8 +84,9 @@ template: contentleft
 
 --
 
-[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/1f5ecf5a87b1c1a8aaf5a7ab8a7a0ff7/conda-cheatsheet.pdf))
-- Gestionnaire de logiciels installé avec Anaconda et Miniconda.
+[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/1f5ecf5a87b1c1a8aaf5a7ab8a7a0ff7/conda-cheatsheet.pdf) / [liste des logiciels](https://anaconda.org/search))
+- Gestionnaire de logiciels.
+- Installé avec Anaconda et Miniconda.
 - Basé sur Python.
 
 --
@@ -134,27 +135,35 @@ $ conda create -n test-end
 ```
 $ conda activate test-env
 ```
-🔍 Le prompt est modifié
+🔍 Le prompt est modifié !
 
+### Quitter un environnement
+```
+$ conda deactivate
+```
 ]
 --
 
 .rightcol[
+### Chercher un logiciel
+```
+$ conda search jupyterlab
+```
+
 ### Installer un logiciel
-```
-$ pip install numpy
-```
-ou
 ```
 $ conda install jupyterlab
 $ conda install -c bioconda samtools
 ```
 ⚠ Pas besoin d'être administrateur 
 
-### Quitter un environnement
+ou encore `$ pip install numpy`
+
+### Supprimer un logiciel 
 ```
-$ conda deactivate
+$ conda remove jupyterlab
 ```
+
 ]
 
 
@@ -198,6 +207,7 @@ template: contentleft
 
 # Gérer les environnements
 
+.leftcol[
 ### Lister les environnements disponibles
 ```
 $ conda env list
@@ -207,7 +217,11 @@ $ conda env list
 ```
 $ conda list -n ENVNAME
 ```
+]
 
+--
+
+.rightcol[
 ### Exporter un environnement dans un fichier yaml
 ```
 $ conda env export -n ENVNAME > envname.yml
@@ -218,23 +232,26 @@ sans la localisation exacte :
 $ conda env export -n ENVNAME | grep -v "^prefix:" > envname.yml
 ```
 
+<br />
 puis, ailleurs, plus tard :
 ```
 $ conda env create -f envname.yml
 ```
+]
+
 
 ---
 template: contentleft
 
 # Utiliser Miniconda (dans les salles infos)
 
-Miniconda est déjà installé. 
+Miniconda est déjà installé 😃
 
 --
 
 <br />
 
-**Ne l'installer pas dans vos sessions utilisateurs !**
+**Ne l'installez pas dans vos sessions utilisateurs !**
 
 .center[
 	<img src="img/i_see_you.gif" height="300px" />
@@ -260,7 +277,7 @@ template: contentleft
 
 # Utiliser Miniconda (dans les salles infos) (3)
 
-### Installer VOTRE environnement 
+### Installer VOTRE environnement (dans votre répertoire utilisateur)
 ```
 $ conda env create -f envname.yml -p /path/to/env/
 ```
@@ -321,9 +338,25 @@ template: contentleft
 
 - Expérimentez / testez !
 
+.center[
+	<img src="img/it_s_alive.gif" height="300px" />
+]
 
 ---
+template: contentleft
 
+# Références 
+
+Deux articles très intéressants sur conda :
+ 
+- [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes.
+- [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique.
+
+<br />
+Le papier de référence de Bioconda :
+
+- [Bioconda: sustainable and comprehensive software distribution for the life sciences](https://www.nature.com/articles/s41592-018-0046-7), Björn Grüning et *al.*, Nature methods, 2018.
+---
 template: contentleft
 
 background-color: #cccccc
