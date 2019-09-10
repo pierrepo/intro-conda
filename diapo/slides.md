@@ -357,6 +357,8 @@ Deux articles très intéressants sur conda :
 Le papier de référence de Bioconda :
 
 - [Bioconda: sustainable and comprehensive software distribution for the life sciences](https://www.nature.com/articles/s41592-018-0046-7), Björn Grüning et *al.*, Nature methods, 2018.
+
+
 ---
 template: contentleft
 
@@ -364,5 +366,6 @@ background-color: #cccccc
 
 # C'est parti ! 🚀
 
-## 💻 [Tutoriel](https://omics-school.github.io/analyse-rna-seq/analyse_RNA-seq_O_tauri.html)
+## 💻 Tutoriel
+
 
