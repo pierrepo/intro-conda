@@ -128,7 +128,7 @@ template: contentleft
 .leftcol[
 ### Créer un environnement 
 ```
-$ conda create -n test-end
+$ conda create -n test-env
 ```
 
 ### Charger un environnement 
