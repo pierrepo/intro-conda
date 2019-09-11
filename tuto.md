@@ -15,7 +15,7 @@ Quelle version a été installée pour les logiciels :
 - fastqc ?
 - samtools ?
 
-Quelle sont les dernières version disponibles dans conda ?
+Quelles sont les dernières version disponibles dans conda ?
 
 
 ## Export d'un environnement 
