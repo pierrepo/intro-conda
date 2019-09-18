@@ -177,7 +177,7 @@ template: contentleft
 ### Décrire l'environnement dans un fichier yaml (rnaseq.yml)
 
 ```
-name: rnaseq-test
+name: rnaseq
 channels:
     - defaults
     - bioconda
@@ -196,9 +196,15 @@ dependencies:
 $ conda env create -f rnaseq.yml
 ```
 
+### Créer un environnement (avec un nom différent)
+```
+$ conda env create -f rnaseq.yml -n test2
+```
+
 ### Supprimer un environnement
 ```
-$ conda env remove -n rnaseq-test
+$ conda env remove -n rnaseq
+$ conda env remove -n test2
 ```
 ]
 
@@ -230,7 +236,14 @@ $ conda env export -n ENVNAME > envname.yml
 
 sans la localisation exacte :
 ```
-$ conda env export -n ENVNAME | grep -v "^prefix:" > envname.yml
+$ conda env export -n ENVNAME \
+ | grep -v "^prefix:" > envname.yml
+```
+
+sans la localisation exacte et les numéros de build :
+```
+$ conda env export -n ENVNAME --no-builds \
+ | grep -v "^prefix:" > envname.yml
 ```
 
 <br />
@@ -280,23 +293,27 @@ template: contentleft
 
 ### Installer VOTRE environnement (dans votre répertoire utilisateur)
 ```
-$ conda env create -f envname.yml -p /path/to/env/
+$ conda env create -f envname.yml
 ```
 
 Exemple :
 ```
-$ conda env create -f rnaseq.yml -p ~/scratch/rnaseq-env/
+$ conda env create -f rnaseq.yml
 ```
+
+--
+⚠ Le nom de votre environnement ne doit pas déjà exister.
+Utilisez l'option `-n` si besoin.
 
 --
 ### Charger VOTRE environnement 
 ```
-$ conda activate /path/to/env/
+$ conda activate ENVNAME
 ```
 
 Exemple :
 ```
-$ conda activate ~/scratch/rnaseq-env/
+$ conda activate rnaseq
 ```
 
 
@@ -313,11 +330,11 @@ $ conda deactivate
 --
 ### Supprimer VOTRE environnement
 ```
-$ conda env remove -p /path/to/env/
+$ conda env remove ENVNAME
 ```
 Exemple :
 ```
-$ conda env remove -p ~/scratch/rnaseq-env/
+$ conda env remove rnaseq
 ```
 
 ---
