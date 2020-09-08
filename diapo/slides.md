@@ -2,7 +2,7 @@ class: center, middle
 
 # Introduction à Conda
 
-## M2BI 2019-2020
+## M2BI 2020-2021
 
 
 <br /><br /><br /><br /><br /><br />
@@ -16,7 +16,7 @@ class: center, middle
 .righcol.right[
 <br /><br />
 Pierre Poulain <br />
-pierre.poulain@univ-paris-diderot.fr <br />
+pierre.poulain@u-paris.fr <br />
 @pierrepo
 ]
 
@@ -30,7 +30,7 @@ layout: true
 name: title
 class: center, middle
 .footer[
-Poulain 2019 CC BY-SA
+Poulain 2020 CC BY-SA
 ]
 
 ---
@@ -39,7 +39,7 @@ layout: true
 name: contentleft
 class: top, left
 .footer[
-Poulain 2019 CC BY-SA
+Poulain 2020 CC BY-SA
 ]
 
 ---
@@ -48,7 +48,7 @@ layout: true
 name: contentcenter
 class: top, center
 .footer[
-Poulain 2019 CC BY-SA
+Poulain 2020 CC BY-SA
 ]
 
 ---
@@ -63,18 +63,20 @@ template: contentleft
 
 - Utiliser et créer un environnement conda.
 
-- Dupliquer un environnement conda.
+- Stocker la description d'un environnement conda dans un fichier.
+
+- Construire votre propre environnement conda.
 
 ---
 template: contentleft
 
-# XXXconda 🐍
+# L'écosystème Conda 🐍
 
 [Anaconda](https://www.anaconda.com/)
 - Distribution open source.
 - Disponible pour Windows, Mac et Linux.
 - Installable sans être **administrateur**.
-- Nombreux outils pour l'analyse de données.
+- Très nombreux outils pour l'analyse de données (plusieurs centaines).
 
 --
 
@@ -85,11 +87,14 @@ template: contentleft
 --
 
 [Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/1f5ecf5a87b1c1a8aaf5a7ab8a7a0ff7/conda-cheatsheet.pdf) / [liste des logiciels](https://anaconda.org/search))
-- Gestionnaire de logiciels.
+- Gestionnaire de paquets (**logiciels**) et d'**environnements**
 - Installé avec Anaconda et Miniconda.
-- Basé sur Python.
+- Basé sur Python mais peut installer R, C++, Julia...
 
---
+---
+template: contentleft
+
+# L'écosystème Conda 🐍
 
 [Bioconda](https://bioconda.github.io/)
 - Canal de diffusion de logiciels utilisés en bioinformatique.
@@ -113,7 +118,7 @@ template: contentleft
 
 <https://docs.conda.io/en/latest/miniconda.html>
 
-- Miniconda > Anaconda (plus léger)
+- Préférez Miniconda à Anaconda
 - Miniconda**3**
 
 <br /><br />
@@ -126,6 +131,47 @@ template: contentleft
 # Utiliser Miniconda (au labo, à la maison)
 
 .leftcol[
+### Chercher un logiciel
+```
+$ conda search jupyterlab
+$ conda search -c bioconda fastqc
+```
+
+ou en ligne https://anaconda.org/
+
+
+### Installer un logiciel
+```
+$ conda install jupyterlab
+$ conda install -c bioconda samtools
+```
+⚠ Pas besoin d'être administrateur !
+
+]
+--
+
+.rightcol[
+### Supprimer un logiciel 
+```
+$ conda remove jupyterlab
+```
+
+<br />
+<br />
+
+⚠ Ne jamais installer de logiciel dans l'environnement de base
+
+]
+
+
+---
+template: contentleft
+
+### Lister les logiciels installés dans un environnement
+```
+$ conda list
+```
+
 ### Créer un environnement 
 ```
 $ conda create -n test-env
@@ -141,31 +187,11 @@ $ conda activate test-env
 ```
 $ conda deactivate
 ```
-]
---
 
-.rightcol[
-### Chercher un logiciel
+### Lister les environnements existants
 ```
-$ conda search jupyterlab
-$ conda search -c bioconda fastqc
+$ conda env list
 ```
-
-### Installer un logiciel
-```
-$ conda install jupyterlab
-$ conda install -c bioconda samtools
-```
-⚠ Pas besoin d'être administrateur !
-
-ou encore `$ pip install numpy`
-
-### Supprimer un logiciel 
-```
-$ conda remove jupyterlab
-```
-
-]
 
 
 ---
