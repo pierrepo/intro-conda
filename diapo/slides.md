@@ -137,7 +137,7 @@ $ conda search jupyterlab
 $ conda search -c bioconda fastqc
 ```
 
-ou en ligne https://anaconda.org/
+ou en ligne https://anaconda.org/search
 
 
 ### Installer un logiciel
@@ -186,13 +186,14 @@ $ conda activate test-env
 ```
 🔍 Le prompt est modifié !
 
+]
+
+.rightcol[
 ### Quitter un environnement
 ```
 $ conda deactivate
 ```
-]
 
-.rightcol[
 ### Lister les environnements existants
 ```
 $ conda env list
