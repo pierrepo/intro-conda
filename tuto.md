@@ -12,7 +12,7 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 
 Installez Conda en suivant ces instructions :
 
-https://python.sdv.univ-paris-diderot.fr/annexe_install_python/
+<https://python.sdv.univ-paris-diderot.fr/annexe_install_python/>
 
 
 ## Virtuellement avec Binder
