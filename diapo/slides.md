@@ -75,24 +75,19 @@ template: contentleft
 --
 
 Améliorer la reproductibilité en science.
-
 --
-
-Parce que pour le moment, on n'est pas très bon...
+ Parce que pour le moment, on n'est pas très bon...
 
 .center[
-<img height="300px" src="img/reproducibility-graphic-online1.jpg">
-<img height="300px" src="img/reproducibility-graphic-online2.jpg">
+<img height="350px" src="img/reproducibility-graphic-online1.jpg">
+<img height="350px" src="img/reproducibility-graphic-online3.jpg">
 ]
 
+.ref[
 1,500 scientists lift the lid on reproducibility<br />
 Baker, *Nature*, 2016.<br />
 https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970
-
----
-template: contentleft
-
-# Pourquoi ?
+]
 
 
 ---
@@ -104,12 +99,58 @@ template: contentleft
 <img height="400px" src="img/conda_docker_VM.png">
 ]
 
+.ref[
 Practical Computational Reproducibility in the Life Sciences<br />
 Grüning *et al*, *Cell Systems*, 2018.<br />
 DOI [10.1016/j.cels.2018.03.014](https://doi.org/10.1016/j.cels.2018.03.014)
+]
 
 
+---
+template: contentleft
 
+# Recommandations pour la création de logiciels en bioinformatique
+
+1. **A package first**
+2. One tool, one container
+3. Tool and container versions should be explicit
+4. Avoid using ENTRYPOINT
+5. Reduce the size of your container as much as possible
+6. Keep data outside of the container
+7. Add functional testing logic
+8. Check the license of the software
+9. Make your package or container discoverable
+10. Provide reproducible and documented builds
+11. Provide helpful usage message
+
+> Conda, is a popular package manager in research software, it
+quickly installs, runs and updates packages and their dependencies. 
+It handles dependencies for many languages, such as
+C, C++, R, Java, Perl, and Python. It works cross-platform and
+does not require special permissions for installation of itself
+or requested packages.
+
+.ref[
+Recommendations for the packaging and containerizing of bioinformatics software<br />
+Gruening, *F1000 Research*, 2019. DOI [10.12688/f1000research.15140.2](https://doi.org/10.12688/f1000research.15140.2)
+]
+
+
+---
+template: contentleft
+
+# Challenge to scientists: does your ten-year-old code still run?
+
+.center[
+<img height="400px" src="img/repro_checklist_1.png">
+<img height="400px" src="img/repro_checklist_2.png">
+]
+
+.ref[
+Challenge to scientists: does your ten-year-old code still run?<br />
+Perkel, *Nature*, 2020.<br />
+DOI [10.1038/d41586-020-02462-7](https://doi.org/10.1038/d41586-020-02462-7)
+]
 
 
 ---
@@ -145,16 +186,51 @@ template: contentleft
 - Canal de diffusion de logiciels utilisés en bioinformatique.
 - Utilisable par le gestionnaire de paquets conda.
 
+<br />
+<br />
+<br />
+<br />
+Bioconda: sustainable and comprehensive software distribution for the life sciences<br />
+Grüning et *al.*, *Nature methods*, 2018.<br />
+DOI [10.1038/s41592-018-0046-7](https://doi.org/10.1038/s41592-018-0046-7)
+
 
 ---
 template: contentleft
 
-# L'écosystème Conda 🐍
+# L'écosystème Conda
 
 .center[
-<img height="400px" src="img/conda.png">
+<img height="450px" src="img/conda.png">
 ]
 
+
+---
+template: contentleft
+
+# Qu'est-ce qu'on installe (Windows, Mac, Linux) ?
+
+https://docs.conda.io/en/latest/miniconda.html
+
+--
+
+⚠️ Beaucoup de logiciels de bioinfo dans Bioconda ne sont disponibles que pour Mac et Linux.
+
+Par exemple :
+
+- [star](https://anaconda.org/bioconda/star)
+- [bowtie2](https://anaconda.org/bioconda/bowtie2)
+- [gromacs](https://anaconda.org/bioconda/gromacs)
+
+--
+
+<br />
+<br />
+Mon conseil :
+
+- Linux ➡️ Linux installers + Python 3.x
+- MacOSX ➡️ MacOSX installers + Python 3.x
+- Windows 10 ➡️ Windows Subsystem for Linux (WSL) ➡️ Linux installers + Python 3.x
 
 ---
 template: contentleft
@@ -417,25 +493,51 @@ $ conda env remove rnaseq
 ---
 template: contentleft
 
+# Encore un peu d'herpétologie
+
+--
+
+Conda est parfois lent à « résoudre » un environnement = trouver les bonnes dépendances pour tous les paquets.
+
+--
+
+.center[
+	<img src="img/mamba.png" height="200px" />
+]
+
+https://github.com/mamba-org/mamba
+
+
+```
+$ conda install mamba -c conda-forge
+```
+
+Utilisez ensuite `mamba` à la place de `conda`...
+
+
+---
+template: contentleft
+
 # Conseils 
 
-- Utilisez des environnements conda.
-
---
-
+.leftcol[
+- Utilisez des environnements conda, toujours (projet, stage...)
 - Décrivez vos environnements dans des fichiers yaml.
-
---
-
 - Versionnez les fichiers yaml.
+]
 
 --
+
+.rightcol[
 
 - Expérimentez / testez !
 
 .center[
 	<img src="img/it_s_alive.gif" height="300px" />
 ]
+
+]
+
 
 ---
 template: contentleft
@@ -447,12 +549,17 @@ Deux articles très intéressants sur conda :
 - [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes.
 - [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique.
 
-<br />
-Le papier de référence de Bioconda :
 
-- [Bioconda: sustainable and comprehensive software distribution for the life sciences](https://www.nature.com/articles/s41592-018-0046-7), Björn Grüning et *al.*, Nature methods, 2018.
+---
+template: contentleft
 
+.center[
+	<img src="https://www.luc-damas.fr/hop/images/2020-09-01_regles_sanitaires.jpg" height="550px" />
+]
 
+.ref[
+Luc Delmas (CC BY NC SA)
+]
 ---
 template: contentleft
 
