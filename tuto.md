@@ -1,14 +1,30 @@
 ---
-title: Tutoriel Conda
+title: TP Conda
 author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
-# Tutoriel
+# TP
+
+## Installation de conda
+
+### Sur votre machine
+
+Installez Conda en suivant ces instructions :
+
+https://python.sdv.univ-paris-diderot.fr/annexe_install_python/
+
+
+## Virtuellement avec Binder
+
+Suivez le tutoriel [Introduction to Conda](https://astrobiomike.github.io/unix/conda-intro) du blog [Happy Belly Bioinformatics](https://astrobiomike.github.io/).
+
+Vous pouvez le réaliser sur votre propre machine ou sur un serveur virtuel en cliquant sur le bouton « launch binder ».
+
 
 ## Exploration d'un environnement 
 
-Chargez l'environnement `ppoulain-test1-2019`.
+Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](rnaseq.yml)
 
 Quelle version a été installée pour les logiciels :
 
@@ -16,20 +32,6 @@ Quelle version a été installée pour les logiciels :
 - samtools ?
 
 Quelles sont les dernières version disponibles dans conda ?
-
-
-## Export d'un environnement 
-
-Exportez l'environnement `ppoulain-test1-2019` dans le fichier `test1.yml`.
-
-N'oubliez pas de supprimer la ligne qui contient le préfix.
-
-
-## Création d'un environnement exporté
-
-À partir du fichier `test1.yml`, créez votre propre environnement dans le répertoire `~/conda-envs/test1`
-
-Chargez cet environnement et vérifiez que vous avez les bonnes version de fastqc et samtools.
 
 
 ## Création de votre environnement
