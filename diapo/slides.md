@@ -230,7 +230,8 @@ Mon conseil :
 
 - Linux ➡️ Linux installers + Python 3.x
 - MacOSX ➡️ MacOSX installers + Python 3.x
-- Windows 10 ➡️ Windows Subsystem for Linux (WSL) ➡️ Linux installers + Python 3.x
+- Windows 10 ➡️ [Windows Subsystem for Linux](https://github.com/pierrepo/intro-wsl) (WSL) ➡️ Linux installers + Python 3.x
+
 
 ---
 template: contentleft
