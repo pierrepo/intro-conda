@@ -1,4 +1,4 @@
-name: ppoulain-test1-2019
+name: rnaseq
 channels:
     - defaults
     - bioconda
