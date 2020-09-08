@@ -167,6 +167,9 @@ $ conda remove jupyterlab
 ---
 template: contentleft
 
+# Utiliser Miniconda (au labo, à la maison) (2)
+
+.leftcol[
 ### Lister les logiciels installés dans un environnement
 ```
 $ conda list
@@ -187,17 +190,19 @@ $ conda activate test-env
 ```
 $ conda deactivate
 ```
+]
 
+.rightcol[
 ### Lister les environnements existants
 ```
 $ conda env list
 ```
-
+]
 
 ---
 template: contentleft
 
-# Utiliser Miniconda (au labo, à la maison) (2)
+# Utiliser Miniconda (au labo, à la maison) (3)
 
 .leftcol[
 ### Décrire l'environnement dans un fichier yaml (rnaseq.yml)
