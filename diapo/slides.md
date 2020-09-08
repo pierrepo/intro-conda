@@ -70,6 +70,51 @@ template: contentleft
 ---
 template: contentleft
 
+# Pourquoi ?
+
+--
+
+Améliorer la reproductibilité en science.
+
+--
+
+Parce que pour le moment, on n'est pas très bon...
+
+.center[
+<img height="300px" src="img/reproducibility-graphic-online1.jpg">
+<img height="300px" src="img/reproducibility-graphic-online2.jpg">
+]
+
+1,500 scientists lift the lid on reproducibility<br />
+Baker, *Nature*, 2016.<br />
+https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970
+
+---
+template: contentleft
+
+# Pourquoi ?
+
+
+---
+template: contentleft
+
+# Le premier niveau
+
+.center[
+<img height="400px" src="img/conda_docker_VM.png">
+]
+
+Practical Computational Reproducibility in the Life Sciences<br />
+Grüning *et al*, *Cell Systems*, 2018.<br />
+DOI [10.1016/j.cels.2018.03.014](https://doi.org/10.1016/j.cels.2018.03.014)
+
+
+
+
+
+---
+template: contentleft
+
 # L'écosystème Conda 🐍
 
 [Anaconda](https://www.anaconda.com/)
