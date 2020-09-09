@@ -561,6 +561,7 @@ template: contentleft
 .ref[
 Luc Delmas (CC BY NC SA)
 ]
+
 ---
 template: contentleft
 
@@ -568,6 +569,6 @@ background-color: #cccccc
 
 # C'est parti ! 🚀
 
-## 💻 Tutoriel
+## 💻 TP
 
 
