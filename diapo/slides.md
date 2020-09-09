@@ -260,7 +260,7 @@ template: contentleft
 ### Chercher un logiciel
 ```
 $ conda search jupyterlab
-$ conda search -c bioconda fastqc
+$ conda search -c bioconda hisat2
 ```
 
 ou en ligne https://anaconda.org/search
@@ -269,7 +269,7 @@ ou en ligne https://anaconda.org/search
 ### Installer un logiciel
 ```
 $ conda install jupyterlab
-$ conda install -c bioconda samtools
+$ conda install -c bioconda hisat2
 ```
 ⚠ Pas besoin d'être administrateur !
 
