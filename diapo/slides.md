@@ -172,7 +172,7 @@ template: contentleft
 
 --
 
-[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/1f5ecf5a87b1c1a8aaf5a7ab8a7a0ff7/conda-cheatsheet.pdf) / [liste des logiciels](https://anaconda.org/search))
+[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) / [liste des logiciels](https://anaconda.org/search))
 - Gestionnaire de paquets (**logiciels**) et d'**environnements**
 - Installé avec Anaconda et Miniconda.
 - Basé sur Python mais peut installer R, C++, Julia...
