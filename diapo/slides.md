@@ -183,7 +183,7 @@ template: contentleft
 # L'écosystème Conda 🐍
 
 [Bioconda](https://bioconda.github.io/)
-- Canal de diffusion de logiciels utilisés en bioinformatique.
+- Canal de diffusion de logiciels utilisés en bioinformatique (>7000 paquets).
 - Utilisable par le gestionnaire de paquets conda.
 
 <br />
