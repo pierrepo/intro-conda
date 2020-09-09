@@ -528,7 +528,7 @@ template: contentleft
 --
 
 .leftcol[
-Si dans [PyPI](https://pypi.org/) :
+Si paquet Python dans [PyPI](https://pypi.org/) :
 
 ```
 name: pbxplore-env
@@ -556,24 +556,27 @@ Sinon, utilisation des autres méthodes :
 - `make`, `make install`
 - ...
 - partagez vos astuces.
-]
+  
 
 <br />
-<br />
-
---
 
 Dans ce cas, votre système d'exploitation sera modifié. Soyez prudent !
 
+<br />
+Docker est une excellente solution.
+
+]
+
 
 ---
+template: contentleft
 
 # Conseils 
 
 .leftcol[
 - Utilisez des environnements conda, toujours (projet, stage...)
-- Décrivez vos environnements dans des fichiers yaml.
-- Versionnez les fichiers yaml.
+- Décrivez vos environnements dans des fichiers yaml (`environment.yml` par exemple).
+- Versionnez les fichiers yaml (git / Github).
 ]
 
 --
@@ -604,11 +607,11 @@ Deux articles très intéressants sur conda :
 template: contentleft
 
 .center[
-	<img src="https://www.luc-damas.fr/hop/images/2020-09-01_regles_sanitaires.jpg" height="550px" />
+	<img src="img/2020-09-01_regles_sanitaires.jpg" height="550px" />
 ]
 
 .ref[
-Luc Delmas (CC BY NC SA)
+[Luc Delmas](https://www.luc-damas.fr/hop/regles-sanitaires) (CC BY NC SA)
 ]
 
 ---
