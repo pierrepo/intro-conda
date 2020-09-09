@@ -574,7 +574,8 @@ template: contentleft
 # Conseils 
 
 .leftcol[
-- Utilisez des environnements conda, toujours (projet, stage...)
+- Utilisez des environnements conda, toujours (projet, stage...).
+- N'installez rien dans `(base)`.
 - Décrivez vos environnements dans des fichiers yaml (`environment.yml` par exemple).
 - Versionnez les fichiers yaml (git / Github).
 ]
