@@ -224,6 +224,10 @@ Par exemple :
 
 --
 
+mais parfois 🥳 [fastqc](https://anaconda.org/bioconda/fastqc)
+
+--
+
 <br />
 <br />
 Mon conseil :
@@ -518,6 +522,51 @@ Utilisez ensuite `mamba` à la place de `conda`...
 
 ---
 template: contentleft
+
+# Que faire si le logiciel qui vous intéresse n'existe pas dans conda ?
+
+--
+
+.leftcol[
+Si dans [PyPI](https://pypi.org/) :
+
+```
+name: pbxplore-env
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python=3.7
+    - pip
+    - numpy
+    - matplotlib
+    - pip:
+        - weblogo==3.6.0
+        - pbxplore
+```
+]
+
+--
+
+.rightcol[
+Sinon, utilisation des autres méthodes :
+
+- `apt install` (notamment pour certaines bibliothèques système)
+- [BiocManager](https://www.bioconductor.org/install/)
+- `make`, `make install`
+- ...
+- partagez vos astuces.
+]
+
+<br />
+<br />
+
+--
+
+Dans ce cas, votre système d'exploitation sera modifié. Soyez prudent !
+
+
+---
 
 # Conseils 
 
