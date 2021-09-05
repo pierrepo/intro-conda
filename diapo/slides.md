@@ -510,7 +510,7 @@ Conda est parfois lent à « résoudre » un environnement = trouver les bonnes 
 	<img src="img/mamba.png" height="200px" />
 ]
 
-https://github.com/mamba-org/mamba
+<https://github.com/mamba-org/mamba>
 
 
 ```
