@@ -26,6 +26,12 @@ Vérifiez également que mamba est disponible :
 mamba --version
 ```
 
+Listez enfin les environnements disponibles :
+
+```bash
+conda env list
+```
+
 ### Sur votre propre machine (à la maison ou au labo)
 
 Installez conda en suivant ces instructions :
