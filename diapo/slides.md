@@ -519,6 +519,8 @@ $ conda install mamba -n base -c conda-forge
 
 Utilisez ensuite `mamba` à la place de `conda` pour installer les paquets et créer les environnements.
 
+<br />
+
 Rq : il est recommandé d'installer dans `base`.
 
 
