@@ -30,7 +30,7 @@ layout: true
 name: title
 class: center, middle
 .footer[
-Poulain 2020 CC BY-SA
+Poulain 2021 CC BY-SA
 ]
 
 ---
@@ -39,7 +39,7 @@ layout: true
 name: contentleft
 class: top, left
 .footer[
-Poulain 2020 CC BY-SA
+Poulain 2021 CC BY-SA
 ]
 
 ---
@@ -48,7 +48,7 @@ layout: true
 name: contentcenter
 class: top, center
 .footer[
-Poulain 2020 CC BY-SA
+Poulain 2021 CC BY-SA
 ]
 
 ---
@@ -514,10 +514,12 @@ https://github.com/mamba-org/mamba
 
 
 ```
-$ conda install mamba -c conda-forge
+$ conda install mamba -n base -c conda-forge
 ```
 
-Utilisez ensuite `mamba` à la place de `conda`...
+Utilisez ensuite `mamba` à la place de `conda` pour installer les paquets et créer les environnements.
+
+Rq : il est recommandé d'installer dans `base`.
 
 
 ---
