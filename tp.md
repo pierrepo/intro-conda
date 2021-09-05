@@ -8,7 +8,25 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 
 ## Installation de conda
 
-### Sur votre machine
+### Sur les machines des salles informatiques
+
+Nous l'avons déjà fait pour vous. Vous avez accès à une version centralisée de conda.
+
+N'installez pas conda vous-même sur les machines des salles infos.
+
+Pour vérifier que conda est bien fonctionnelle, utilisez la commande suivante :
+
+```bash
+conda --version
+```
+
+Vérifiez également que mamba est disponible :
+
+```bash
+mamba --version
+```
+
+### Sur votre propre machine (à la maison ou au labo)
 
 Installez conda en suivant ces instructions :
 
@@ -44,7 +62,7 @@ Pour cela :
 2. Identifiez les bibliothèques associées dont vous aurez besoin.
 3. Identifiez les autres logiciels dont vous aurez besoin.
 
-Pour chacun de ces éléments, vérifiez s'il est disponibl dans conda. Utilisez le moteur de recherche d'[anaconda.org](https://anaconda.org/search).
+Pour chacun de ces éléments, vérifiez s'il est disponible dans conda. Utilisez le moteur de recherche d'[anaconda.org](https://anaconda.org/search).
 
 Que faire si ce n'est pas le cas ?
 
