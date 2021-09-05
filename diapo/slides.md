@@ -521,7 +521,7 @@ Utilisez ensuite `mamba` à la place de `conda` pour installer les paquets et cr
 
 <br />
 
-Rq : il est recommandé d'installer dans `base`.
+Rq : il est recommandé d'installer `mamba` dans `base`.
 
 
 ---
@@ -567,7 +567,7 @@ Sinon, utilisation des autres méthodes :
 Dans ce cas, votre système d'exploitation sera modifié. Soyez prudent !
 
 <br />
-Docker est une excellente solution.
+Les conteneurs type *Docker* sont aussi une excellente solution.
 
 ]
 
@@ -578,8 +578,8 @@ template: contentleft
 # Conseils 
 
 .leftcol[
-- Utilisez des environnements conda, toujours (projet, stage...).
-- N'installez rien dans `(base)`.
+- Utilisez des environnements conda, **toujours** (projets, stages...).
+- N'installez rien dans `base` (sauf mamba).
 - Décrivez vos environnements dans des fichiers yaml (`environment.yml` par exemple).
 - Versionnez les fichiers yaml (git / Github).
 ]
