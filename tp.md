@@ -8,13 +8,11 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 
 ## Installation de conda
 
-### Sur les machines des salles informatiques
+### Sur les machines des salles informatiques à l'université
 
-Nous l'avons déjà fait pour vous. Vous avez accès à une version centralisée de conda.
+N'installez pas conda vous-même sur les machines des salles infos. Nous l'avons déjà fait pour vous. Vous avez accès à une version centralisée de conda.
 
-N'installez pas conda vous-même sur les machines des salles infos.
-
-Pour vérifier que conda est bien fonctionnelle, utilisez la commande suivante :
+Pour vérifier que conda est fonctionnel, utilisez la commande suivante :
 
 ```bash
 conda --version
@@ -26,7 +24,7 @@ Vérifiez également que mamba est disponible :
 mamba --version
 ```
 
-Listez enfin les environnements disponibles :
+Listez enfin les environnements déjà existants :
 
 ```bash
 conda env list
