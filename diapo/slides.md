@@ -55,6 +55,7 @@ Poulain 2021 CC BY-SA
 
 template: contentleft
 
+font-size: 200%
 # Objectifs d'apprentissage
 
 --
@@ -66,6 +67,7 @@ template: contentleft
 - Stocker la description d'un environnement conda dans un fichier.
 
 - Construire votre propre environnement conda.
+
 
 ---
 template: contentleft
@@ -109,7 +111,7 @@ DOI [10.1016/j.cels.2018.03.014](https://doi.org/10.1016/j.cels.2018.03.014)
 ---
 template: contentleft
 
-# Recommandations pour la création de logiciels en bioinformatique
+# Recommendations for the packaging and containerizing of bioinformatics software
 
 1. **A package first**
 2. One tool, one container
@@ -123,12 +125,12 @@ template: contentleft
 10. Provide reproducible and documented builds
 11. Provide helpful usage message
 
-> Conda, is a popular package manager in research software, it
+> *Conda, is a popular package manager in research software, it
 quickly installs, runs and updates packages and their dependencies. 
 It handles dependencies for many languages, such as
 C, C++, R, Java, Perl, and Python. It works cross-platform and
 does not require special permissions for installation of itself
-or requested packages.
+or requested packages.*
 
 .ref[
 Recommendations for the packaging and containerizing of bioinformatics software<br />
@@ -164,15 +166,17 @@ template: contentleft
 - Installable sans être **administrateur**.
 - Très nombreux outils pour l'analyse de données (plusieurs centaines).
 
+<br />
 --
 
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 - Version *light* d'Anaconda (le strict minimum).
 - Aussi installable sans être **administrateur**.
 
+<br />
 --
 
-[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) / [liste des logiciels](https://anaconda.org/search))
+[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf ) / [liste des logiciels](https://anaconda.org/search))
 - Gestionnaire de paquets (**logiciels**) et d'**environnements**
 - Installé avec Anaconda et Miniconda.
 - Basé sur Python mais peut installer R, C++, Julia...
@@ -254,7 +258,25 @@ Notice : <https://python.sdv.univ-paris-diderot.fr/annexe_install_python/> 👍
 ---
 template: contentleft
 
-# Utiliser Miniconda (au labo, à la maison)
+# Utiliser Miniconda (dans les salles infos)
+
+Miniconda est déjà installé 😃
+
+--
+
+<br />
+
+**Ne l'installez pas dans vos sessions utilisateurs !**
+
+.center[
+	<img src="img/i_see_you.gif" height="300px" />
+]
+
+
+---
+template: contentleft
+
+# Utiliser Miniconda
 
 .leftcol[
 ### Chercher un logiciel
@@ -281,19 +303,23 @@ $ conda install -c bioconda hisat2
 ```
 $ conda remove jupyterlab
 ```
-
 <br />
 <br />
-
-⚠ Ne jamais installer de logiciel dans l'environnement de base
+<br />
+<br />
 
 ]
 
+--
+
+⚠ Ne jamais installer de logiciel dans l'environnement de base.
+
+Utilisez des **environnements** !
 
 ---
 template: contentleft
 
-# Utiliser Miniconda (au labo, à la maison) (2)
+# Utiliser Miniconda (environnements)
 
 .leftcol[
 ### Lister les logiciels installés dans un environnement
@@ -324,12 +350,21 @@ $ conda deactivate
 ```
 $ conda env list
 ```
+<br />
+<br />
+<br />
+<br />
+
 ]
+
+--
+
+**Un projet = un environnement**
 
 ---
 template: contentleft
 
-# Utiliser Miniconda (au labo, à la maison) (3)
+# Utiliser Miniconda
 
 .leftcol[
 ### Décrire l'environnement dans un fichier yaml (rnaseq.yml)
@@ -412,28 +447,12 @@ $ conda env create -f envname.yml
 ]
 
 
+
+
 ---
 template: contentleft
 
 # Utiliser Miniconda (dans les salles infos)
-
-Miniconda est déjà installé 😃
-
---
-
-<br />
-
-**Ne l'installez pas dans vos sessions utilisateurs !**
-
-.center[
-	<img src="img/i_see_you.gif" height="300px" />
-]
-
-
----
-template: contentleft
-
-# Utiliser Miniconda (dans les salles infos) (2)
 
 ### Utiliser les environnements des profs
 ```
@@ -447,9 +466,12 @@ $ conda deactivate
 ---
 template: contentleft
 
-# Utiliser Miniconda (dans les salles infos) (3)
+# Utiliser Miniconda (dans les salles infos)
 
-### Installer VOTRE environnement (dans votre répertoire utilisateur)
+### Installer VOTRE environnement
+
+Vous n'avez les droits pour créer des environnements dans le répertoire d'installation de miniconda, vos environnements seront alors créés dans votre répertoire utilisateurs.
+
 ```
 $ conda env create -f envname.yml
 ```
@@ -471,14 +493,14 @@ $ conda activate ENVNAME
 
 Exemple :
 ```
-$ conda activate rnaseq
+$ conda activate naseq
 ```
 
 
 ---
 template: contentleft
 
-# Utiliser Miniconda (dans les salles infos) (4)
+# Utiliser Miniconda (dans les salles infos)
 
 ### Quitter VOTRE environnement
 ```
@@ -488,17 +510,17 @@ $ conda deactivate
 --
 ### Supprimer VOTRE environnement
 ```
-$ conda env remove ENVNAME
+$ conda env remove -n ENVNAME
 ```
 Exemple :
 ```
-$ conda env remove rnaseq
+$ conda env remove -n rnaseq
 ```
 
 ---
 template: contentleft
 
-# Encore un peu d'herpétologie
+# Encore un peu d'herpétologie 🐍
 
 --
 
@@ -507,7 +529,7 @@ Conda est parfois lent à « résoudre » un environnement = trouver les bonnes 
 --
 
 .center[
-	<img src="img/mamba.png" height="200px" />
+	<img src="img/mamba.png" height="150px" />
 ]
 
 <https://github.com/mamba-org/mamba>
@@ -521,7 +543,11 @@ Utilisez ensuite `mamba` à la place de `conda` pour installer les paquets et cr
 
 <br />
 
-Rq : il est recommandé d'installer `mamba` dans `base`.
+--
+
+Remarque 1 : il est recommandé d'installer `mamba` dans l'environnement `base`.
+
+Remarque 2 : `mamba` est déjà installé dans miniconda des salles informatiques (`mamba --version`)
 
 
 ---
@@ -535,7 +561,7 @@ template: contentleft
 Si paquet Python dans [PyPI](https://pypi.org/) :
 
 ```
-name: pbxplore-env
+name: pbxplore
 channels:
     - defaults
     - conda-forge
