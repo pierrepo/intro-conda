@@ -46,7 +46,7 @@ Vous pouvez le réaliser sur votre propre machine ou sur un serveur virtuel en c
 
 ## Exploration d'un environnement 
 
-Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](rnaseq.yml)
+Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](https://raw.githubusercontent.com/pierrepo/intro-conda/master/rnaseq.yml)
 
 Quelle version a été installée pour les logiciels :
 
