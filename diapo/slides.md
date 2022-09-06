@@ -8,8 +8,8 @@ class: center, middle
 <br /><br /><br /><br /><br /><br />
 
 .leftcol[
-<img src="img/Universite_Paris_logo_horizontal_2000px.png"
-	 height="100px" style="vertical-align:top;">
+<img src="img/UniversiteParisCite_logo_horizontal_couleur_RVB.png"
+	 height="150px" style="vertical-align:top;">
  </img>
 ]
 
