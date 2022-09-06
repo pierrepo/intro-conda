@@ -2,7 +2,7 @@ class: center, middle
 
 # Introduction à Conda
 
-## M2BI 2020-2021
+## M2BI 2021-2022
 
 
 <br /><br /><br /><br /><br /><br />
@@ -30,7 +30,7 @@ layout: true
 name: title
 class: center, middle
 .footer[
-Poulain 2021 CC BY-SA
+P. Poulain ~ CC BY-SA
 ]
 
 ---
@@ -39,7 +39,7 @@ layout: true
 name: contentleft
 class: top, left
 .footer[
-Poulain 2021 CC BY-SA
+P. Poulain ~ CC BY-SA
 ]
 
 ---
@@ -48,7 +48,7 @@ layout: true
 name: contentcenter
 class: top, center
 .footer[
-Poulain 2021 CC BY-SA
+P. Poulain ~ CC BY-SA
 ]
 
 ---
@@ -176,11 +176,11 @@ template: contentleft
 <br />
 --
 
-[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf ) / [liste des logiciels](https://anaconda.org/search))
+[Conda](https://docs.conda.io/projects/conda/en/latest/index.html) ([Cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf))
 - Gestionnaire de paquets (**logiciels**) et d'**environnements**
 - Installé avec Anaconda et Miniconda.
 - Basé sur Python mais peut installer R, C++, Julia...
-
+- Liste des logiciels : https://anaconda.org/search
 ---
 template: contentleft
 
@@ -260,11 +260,14 @@ template: contentleft
 
 # Utiliser Miniconda (dans les salles infos)
 
-Miniconda est déjà installé 😃
+Miniconda est déjà installé 😃. La preuve :
+
+```bash
+$ conda --version
+conda 4.14.0
+```
 
 --
-
-<br />
 
 **Ne l'installez pas dans vos sessions utilisateurs !**
 
@@ -312,7 +315,7 @@ $ conda remove jupyterlab
 
 --
 
-⚠ Ne jamais installer de logiciel dans l'environnement de base.
+⚠ Ne jamais installer de logiciel dans l'environnement `base` qui est l'environnement par défaut.
 
 Utilisez des **environnements** !
 
@@ -322,11 +325,6 @@ template: contentleft
 # Utiliser Miniconda (environnements)
 
 .leftcol[
-### Lister les logiciels installés dans un environnement
-```
-$ conda list
-```
-
 ### Créer un environnement 
 ```
 $ conda create -n test-env
@@ -338,12 +336,18 @@ $ conda activate test-env
 ```
 🔍 Le prompt est modifié !
 
-]
-
-.rightcol[
 ### Quitter un environnement
 ```
 $ conda deactivate
+```
+
+]
+
+.rightcol[
+
+### Lister les logiciels installés dans un environnement
+```
+$ conda list
 ```
 
 ### Lister les environnements existants
@@ -470,7 +474,7 @@ template: contentleft
 
 ### Installer VOTRE environnement
 
-Vous n'avez les droits pour créer des environnements dans le répertoire d'installation de miniconda, vos environnements seront alors créés dans votre répertoire utilisateurs.
+Vous n'avez les droits pour créer des environnements dans le répertoire d'installation de miniconda, vos environnements seront alors créés dans votre répertoire utilisateur.
 
 ```
 $ conda env create -f envname.yml
@@ -633,17 +637,6 @@ Deux articles très intéressants sur conda :
 - [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes.
 - [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique.
 
-
----
-template: contentleft
-
-.center[
-	<img src="img/2020-09-01_regles_sanitaires.jpg" height="550px" />
-]
-
-.ref[
-[Luc Delmas](https://www.luc-damas.fr/hop/regles-sanitaires) (CC BY NC SA)
-]
 
 ---
 template: contentleft
