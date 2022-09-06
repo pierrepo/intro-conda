@@ -39,6 +39,8 @@ Installez conda en suivant ces instructions :
 
 ## Virtuellement avec Binder
 
+⚠️ Uniquement si cela ne fonctionne pas sur les machines des salles informatiques !
+
 Suivez le tutoriel [Introduction to Conda](https://astrobiomike.github.io/unix/conda-intro) du blog [Happy Belly Bioinformatics](https://astrobiomike.github.io/).
 
 Vous pouvez le réaliser sur votre propre machine ou sur un serveur virtuel en cliquant sur le bouton « launch binder ».
