@@ -50,10 +50,10 @@ Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](https://
 
 Quelle version a été installée pour les logiciels :
 
-- fastqc ?
-- samtools ?
+- fastqc ? (`fastqc --version`)
+- samtools ? (`samtools --version`)
 
-Quelles sont les dernières version disponibles dans conda ?
+Quelles sont les dernières version disponibles dans conda ? (https://anaconda.org/search)
 
 
 ## Création de votre environnement
@@ -70,9 +70,11 @@ Pour chacun de ces éléments, vérifiez s'il est disponible dans conda. Utilise
 
 Que faire si ce n'est pas le cas ?
 
-Créez ensuite votre environnement puis installez les paquets un par un, en précisant si besoin les *channels* nécessaires.
+Créez ensuite votre environnement puis installez les paquets un par un, en précisant si besoin les *channels* nécessaires. Préférez `mamba` à `conda` pour l'installation des paquets.
 
 Quand l'environnement vous semble fonctionel, créez un fichier `environment.yml` qui contient la description de votre environment.
+
+Supprimez votre environnement puis recréez-le directement avec le fichier `environment.yml`.
 
 Pensez enfin à écrire une notice décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non compatibles avec conda.
 
