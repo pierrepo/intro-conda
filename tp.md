@@ -32,6 +32,8 @@ conda env list
 
 ### Sur votre propre machine (à la maison ou au labo)
 
+⚠️ Uniquement si cela ne fonctionne pas sur les machines des salles informatiques !
+
 Installez conda en suivant ces instructions :
 
 <https://python.sdv.univ-paris-diderot.fr/annexe_install_python/>
