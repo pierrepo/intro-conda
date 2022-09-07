@@ -497,7 +497,7 @@ $ conda activate ENVNAME
 
 Exemple :
 ```
-$ conda activate naseq
+$ conda activate rnaseq
 ```
 
 
