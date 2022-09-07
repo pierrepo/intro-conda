@@ -62,7 +62,7 @@ Quelle version a été installée pour les logiciels :
 Quelles sont les dernières version disponibles dans conda ? (<https://anaconda.org/search>)
 
 
-## Création de votre environnement
+## Création de votre environnement pour le projet court
 
 Essayez de créer un environnement conda pour votre projet court.
 
