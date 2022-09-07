@@ -41,7 +41,7 @@ Installez conda en suivant ces instructions :
 
 ## Virtuellement avec Binder
 
-⚠️ Uniquement si cela ne fonctionne pas sur les machines des salles informatiques !
+⚠️ Uniquement si cela ne fonctionne pas sur les machines des salles informatiques et sur votre propre machine !
 
 Suivez le tutoriel [Introduction to Conda](https://astrobiomike.github.io/unix/conda-intro) du blog [Happy Belly Bioinformatics](https://astrobiomike.github.io/).
 
@@ -50,14 +50,16 @@ Vous pouvez le réaliser sur votre propre machine ou sur un serveur virtuel en c
 
 ## Exploration d'un environnement 
 
-Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](https://raw.githubusercontent.com/pierrepo/intro-conda/master/rnaseq.yml)
+Créez l'environnement conda `rnaseq` à partir du fichier [rnaseq.yml](https://raw.githubusercontent.com/pierrepo/intro-conda/master/rnaseq.yml). Utilisez `mamba`.
+
+Chargez ce nouvel environnement.
 
 Quelle version a été installée pour les logiciels :
 
 - fastqc ? (`fastqc --version`)
 - samtools ? (`samtools --version`)
 
-Quelles sont les dernières version disponibles dans conda ? (https://anaconda.org/search)
+Quelles sont les dernières version disponibles dans conda ? (<https://anaconda.org/search>)
 
 
 ## Création de votre environnement
