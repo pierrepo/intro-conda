@@ -645,6 +645,6 @@ background-color: #cccccc
 
 # C'est parti ! 🚀
 
-## 💻 TP
+## 💻 [TP](https://cupnet.net/intro-conda/tp)
 
 
