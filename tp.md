@@ -82,6 +82,6 @@ Quand l'environnement vous semble fonctionel, créez un fichier `environment.yml
 
 Supprimez votre environnement puis recréez-le directement avec le fichier `environment.yml`.
 
-Pensez enfin à écrire une notice décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non compatibles avec conda.
+Pensez enfin à écrire une notice (par exemple dans un fichier `README.md`) décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non disponibles dans conda.
 
 
