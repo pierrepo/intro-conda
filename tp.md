@@ -76,12 +76,22 @@ Pour chacun de ces éléments, vérifiez s'il est disponible dans conda. Utilise
 
 Que faire si ce n'est pas le cas ?
 
-Créez ensuite votre environnement puis installez les paquets un par un, en précisant si besoin les *channels* nécessaires. Préférez `mamba` à `conda` pour l'installation des paquets.
+Créez un fichier `environment.yml` qui contient la description de votre environment (inspirez-vous de [rnaseq.yml](https://raw.githubusercontent.com/pierrepo/intro-conda/master/rnaseq.yml)), puis installez-le avec `mamba`. Conseil : dans un premier temps, ne préciser par les versions des outils que vous installez.
 
-Quand l'environnement vous semble fonctionel, créez un fichier `environment.yml` qui contient la description de votre environment.
+Chargez votre environnement et vérifiez que tous les langages, bibliothèques et logiciels dont vous avez besoin sont présents.
 
-Supprimez votre environnement puis recréez-le directement avec le fichier `environment.yml`.
+S'il manque des outils, modifiez le fichier `environment.yml` puis mettez à jour votre environnement avec la commmande :
 
-Pensez enfin à écrire une notice (par exemple dans un fichier `README.md`) décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non disponibles dans conda.
+```bash
+mamba env update -f environment.yml
+```
+
+Vérifiez encore une fois que tous les outils dont vous avez besoin sont disponibles.
+
+Déconnectez-vous de votre environnement. Vérfiez que les outils de votre projet ne sont plus disponibles. Chargez à nouveau notre environnement et vérifiez une dernière fois que tous les outils sont présents.
+
+Déposez votre fichier `environment.yml` dans le dépôt GitHub de votre projet court.
+
+Pensez enfin à **écrire une notice** (par exemple dans un fichier `README.md`) décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non disponibles dans conda.
 
 
