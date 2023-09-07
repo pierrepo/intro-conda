@@ -633,7 +633,7 @@ template: contentleft
 
 # Références 
 
-- [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes. <br />
+- [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes.
 - [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique. <br />
 - [An introduction to Conda](https://astrobiomike.github.io/unix/conda-intro), Happy Belly Bioinformatics. <br />
 - Vidéo « [The only CONDA tutorial you'll need to watch to get started](https://www.youtube.com/watch?v=sDCtY9Z1bqE) », Coding Professor, 2021. <br />
