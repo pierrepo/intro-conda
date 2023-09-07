@@ -2,7 +2,7 @@ class: center, middle
 
 # Introduction à Conda
 
-## M2BI 2021-2022
+## M2BI 2022-2023
 
 
 <br /><br /><br /><br /><br /><br />
@@ -16,8 +16,7 @@ class: center, middle
 .righcol.right[
 <br /><br />
 Pierre Poulain <br />
-pierre.poulain@u-paris.fr <br />
-@pierrepo
+pierre.poulain@u-paris.fr
 ]
 
 .footer[
@@ -95,6 +94,38 @@ https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.1
 ---
 template: contentleft
 
+# Les environnements logiciels
+
+<br />
+<br />
+
+> “Code” is the code you care about. “Environment” is code you don’t care about.
+
+<br />
+<br />
+
+– Konrad Hinser, « [A guide to reproducible research papers](https://hpc.guix.info/blog/2023/06/a-guide-to-reproducible-research-papers/) », Guix, 2023.
+
+
+---
+template: contentleft
+
+# Les environnements logiciels
+
+.center[
+<img height="400px" src="img/5pillars.png">
+]
+
+.ref[
+The five pillars of computational reproducibility: Bioinformatics and beyond,
+Ziemann *et al*, *Preprint*, 2023.<br />
+<https://ziemann-lab.net/public/5pillars/5pillars.html>
+]
+
+
+---
+template: contentleft
+
 # Le premier niveau
 
 .center[
@@ -106,37 +137,6 @@ Practical Computational Reproducibility in the Life Sciences<br />
 Grüning *et al*, *Cell Systems*, 2018.<br />
 DOI [10.1016/j.cels.2018.03.014](https://doi.org/10.1016/j.cels.2018.03.014)
 ]
-
-
----
-template: contentleft
-
-# Recommendations for the packaging and containerizing of bioinformatics software
-
-1. **A package first**
-2. One tool, one container
-3. Tool and container versions should be explicit
-4. Avoid using ENTRYPOINT
-5. Reduce the size of your container as much as possible
-6. Keep data outside of the container
-7. Add functional testing logic
-8. Check the license of the software
-9. Make your package or container discoverable
-10. Provide reproducible and documented builds
-11. Provide helpful usage message
-
-> *Conda, is a popular package manager in research software, it
-quickly installs, runs and updates packages and their dependencies. 
-It handles dependencies for many languages, such as
-C, C++, R, Java, Perl, and Python. It works cross-platform and
-does not require special permissions for installation of itself
-or requested packages.*
-
-.ref[
-Recommendations for the packaging and containerizing of bioinformatics software<br />
-Gruening, *F1000 Research*, 2019. DOI [10.12688/f1000research.15140.2](https://doi.org/10.12688/f1000research.15140.2)
-]
-
 
 ---
 template: contentleft
@@ -236,9 +236,9 @@ mais parfois 🥳 [fastqc](https://anaconda.org/bioconda/fastqc)
 <br />
 Mon conseil :
 
-- Linux ➡️ Linux installers + Python 3.x
-- MacOSX ➡️ MacOSX installers + Python 3.x
-- Windows 10 ➡️ [Windows Subsystem for Linux](https://github.com/pierrepo/intro-wsl) (WSL) ➡️ Linux installers + Python 3.x
+- Linux ➡️ Linux installer
+- MacOSX ➡️ MacOSX installer
+- Windows 10/11 ➡️ [Windows Subsystem for Linux](https://github.com/patrickfuchs/cours-unix/blob/master/wsl.md) (WSL) ➡️ **Linux installer**
 
 
 ---
@@ -264,7 +264,7 @@ Miniconda est déjà installé 😃. La preuve :
 
 ```bash
 $ conda --version
-conda 4.14.0
+conda 23.7.3
 ```
 
 --
@@ -586,7 +586,7 @@ dependencies:
 Sinon, utilisation des autres méthodes :
 
 - `apt install` (notamment pour certaines bibliothèques système)
-- [BiocManager](https://www.bioconductor.org/install/)
+- [BiocManager](https://www.bioconductor.org/install/) (R)
 - `make`, `make install`
 - ...
 - partagez vos astuces.
@@ -609,6 +609,7 @@ template: contentleft
 
 .leftcol[
 - Utilisez des environnements conda, **toujours** (projets, stages...).
+- 1 projet = 1 environnement
 - N'installez rien dans `base` (sauf mamba).
 - Décrivez vos environnements dans des fichiers yaml (`environment.yml` par exemple).
 - Versionnez les fichiers yaml (git / Github).
@@ -632,10 +633,13 @@ template: contentleft
 
 # Références 
 
-Deux articles très intéressants sur conda :
- 
-- [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes.
-- [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique.
+- [Conda le meilleur ami du bioinformaticien](https://bioinfo-fr.net/conda-le-meilleur-ami-du-bioinformaticien). Article d'introduction. Attention cependant, certaines commandes sont obsolètes. <br />
+- [Comment fixer les problèmes de déploiement et de durabilité des outils en bioinformatique ? Indice : conda !](https://bioinfo-fr.net/comment-fixer-les-problemes-de-deploiement-et-de-durabilite-des-outils-en-bioinformatique). Article un peu plus technique. <br />
+- [An introduction to Conda](https://astrobiomike.github.io/unix/conda-intro), Happy Belly Bioinformatics. <br />
+- Vidéo « [The only CONDA tutorial you'll need to watch to get started](https://www.youtube.com/watch?v=sDCtY9Z1bqE) », Coding Professor, 2021. <br />
+
+
+
 
 
 ---
