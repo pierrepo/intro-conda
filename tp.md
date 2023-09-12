@@ -92,6 +92,6 @@ Déconnectez-vous de votre environnement. Vérfiez que les outils de votre proje
 
 Déposez votre fichier `environment.yml` dans le dépôt GitHub de votre projet court.
 
-Pensez enfin à **écrire une notice** (par exemple dans un fichier `README.md`) décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non disponibles dans conda.
+Pensez enfin à **écrire une notice** (par exemple dans un fichier `README.md` comme [celui-ci](https://github.com/MDverse/mdws/) ou [celui-là](https://github.com/data-fun/3d-genome-builder)) décrivant la manière de construire votre environnement conda et si besoin, d'installer les logiciels tierces non disponibles dans conda.
 
 

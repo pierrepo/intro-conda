@@ -2,7 +2,7 @@ class: center, middle
 
 # Introduction à Conda
 
-## M2BI 2022-2023
+## M2BI 2023-2024
 
 
 <br /><br /><br /><br /><br /><br />
@@ -99,12 +99,12 @@ template: contentleft
 <br />
 <br />
 
-> “Code” is the code you care about. “Environment” is code you don’t care about.
+> **“Code” is the code you care about. “Environment” is code you don’t care about.**
 
 <br />
 <br />
 
-– Konrad Hinser, « [A guide to reproducible research papers](https://hpc.guix.info/blog/2023/06/a-guide-to-reproducible-research-papers/) », Guix, 2023.
+– Konrad Hinsen, « [A guide to reproducible research papers](https://hpc.guix.info/blog/2023/06/a-guide-to-reproducible-research-papers/) », Guix, 2023.
 
 
 ---
